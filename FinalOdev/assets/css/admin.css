@@ -1,0 +1,130 @@
+
+body {
+    background-color: #f4f4f0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1b4332; 
+    padding-top: 30px;
+    color: #fff;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.2);
+    border-right: 3px solid #d4a373;
+}
+
+.sidebar h4 {
+    text-align: center;
+    color: #d4a373; 
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+    display: block;
+    transition: 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #fff;
+    border-left: 4px solid #d4a373;
+}
+
+.sidebar a.active {
+    background-color: #fff;
+    color: #1b4332; /* Aktif olunca yazı yeşil */
+    border-left: 4px solid #d4a373;
+    font-weight: bold;
+}
+
+.sidebar i { width: 25px; text-align: center; margin-right: 10px; }
+
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    min-height: 100vh;
+}
+
+
+.stat-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dcdcdc;
+}
+
+.stat-card:hover { transform: translateY(-5px); border-color: #1b4332; }
+
+.stat-info h3 { color: #1b4332; font-family: 'Georgia', serif; font-weight: 700; }
+.stat-icon { font-size: 2.5rem; opacity: 0.8; }
+
+.stat-card.blue .stat-icon { color: #1b4332; }
+.stat-card.green .stat-icon { color: #2d6a4f; }
+.stat-card.orange .stat-icon { color: #d4a373; }
+
+
+.custom-table {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.custom-table thead {
+    background-color: #1b4332;
+    color: #fff;
+}
+.custom-table th, .custom-table td { padding: 15px; vertical-align: middle; color: #2d3436; }
+
+
+.btn-primary { background-color: #1b4332; border-color: #1b4332; border-radius: 4px; }
+.btn-primary:hover { background-color: #0d1f17; }
+
+.btn-success { background-color: #2d6a4f; border-color: #2d6a4f; border-radius: 4px; }
+
+
+.login-body {
+    background-color: #1b4332;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+}
+.login-card {
+    background: #f4f4f0;
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%; max-width: 400px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    border: 3px solid #d4a373;
+}
+.login-title { color: #1b4332; font-family: 'Georgia', serif; }
+
+.btn-siteye-don {
+    background-color: transparent;
+    color: #d4a373;
+    border: 2px solid #d4a373;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+.btn-siteye-don:hover { background-color: #d4a373; color: #1b4332; }
